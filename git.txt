@@ -1,0 +1,10 @@
+Git init
+
+
+
+---- Branches
+
+Master:
+git brach --> see branch, active brach
+git branch develop --> create branch
+git checout develop --> cambiar de branch
