@@ -1,7 +1,23 @@
+-- config
+git config --global user.email 'jllorente.leyton@gmail.com'
+git config --global user.name 'javier llorente'
+git status
+git log
+
+
+-- New project
 Git init
+ git remote add origin "https://github.com/javierllorenteleyton/git-github.git"
+ git pull origin <branch> -- ex. git pull origin master 
 
-
-
+ -- modify
+ ----  Local
+ git add .
+ git commit -m 'Firt commit'
+ 
+ ---- remote
+ git push origin <branch> ex. master
+ 
 ---- Branches
 
 Master:
@@ -9,6 +25,18 @@ git brach --> see branch, active brach
 git branch develop --> create branch
 git checout develop --> cambiar de branch
 
+--- Merge
+go to source branch --> git checkout <sourceBranch>
+merge ---> git merge <destBranch> 
 ---revert commit
 
 git reset HEAD <file> --> stage to working
+git reset HEAD~ --> revert last commit
+
+----------- add project to git
+http://www.initializr.com/ get a init project
+git init
+git status
+git add .
+git commir -m 'init commit'
+
