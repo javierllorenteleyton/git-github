@@ -8,3 +8,7 @@ Master:
 git brach --> see branch, active brach
 git branch develop --> create branch
 git checout develop --> cambiar de branch
+
+---revert commit
+
+git reset HEAD <file> --> stage to working
