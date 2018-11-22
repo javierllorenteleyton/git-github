@@ -33,10 +33,44 @@ merge ---> git merge <destBranch>
 git reset HEAD <file> --> stage to working
 git reset HEAD~ --> revert last commit
 
------------ add project to git
+----------- add project to git (Local)
 http://www.initializr.com/ get a init project
 git init
 git status
 git add .
 git commir -m 'init commit'
+
+----------- add project to git (GitHub)
+https://github.com/scm-ninja fork
+
+---- backing out change
+git checkout -- <file>
+
+--- delete file git 
+git rm <file>
+git commit -m 'delete'
+git reset HEAD <file> -- reset commit
+git checkout -- <file> -- reset delete
+
+--- rename move
+git mv <file_current_name> <new_name>
+git mv filr_name directory_name
+
+--- history
+git log
+git log -abbrev-log
+git log --oneline - - graph - - decorate
+git log --since="2 days ago"
+git log -- <file>
+git show <commit Id>
+
+--- git alias
+git config --global alias.<short> "Long cmm"
+
+--- ignore files.
+.gitignore
+   <file>
+   *.txt
+   dir/
+
 
