@@ -26,8 +26,8 @@ git branch develop --> create branch
 git checout develop --> cambiar de branch
 
 --- Merge
-go to source branch --> git checkout <sourceBranch>
-merge ---> git merge <destBranch> 
+go to dest branch --> git checkout <destBranch>
+merge ---> git merge <sourceBranch> 
 ---revert commit
 
 git reset HEAD <file> --> stage to working
@@ -76,3 +76,14 @@ git config --global alias.<short> "Long cmm"
 ---------- editor to commit
 git config --global core.editor "subl -n -w"
 git config --global core.editor "\"C:\Program Files (x86)\Notepad++\notepad++.exe\""
+
+---- Compare 
+work area to stagin area --> git diff  / git diff <file> 
+work area to repo --> git diff HEAD <file> last commit
+stagin to repo -->git diff --staged HEAD 
+compre commits --> git diff <commitida> <commitid2> --> git log --oneline to see commits
+                     git diff HEAD HEAD^
+					 
+--- branches
+git branch -a
+git branch <new>
