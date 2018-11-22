@@ -75,4 +75,4 @@ git config --global alias.<short> "Long cmm"
 
 ---------- editor to commit
 git config --global core.editor "subl -n -w"
-git config --global core.editor "C:\Program Files (x86)\Notepad++\notepad++.exe"
+git config --global core.editor "\"C:\Program Files (x86)\Notepad++\notepad++.exe\""
