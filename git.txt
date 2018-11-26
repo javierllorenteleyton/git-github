@@ -39,6 +39,7 @@ git init
 git status
 git add .
 git commir -m 'init commit'
+git commir -am 'init commit'
 
 ----------- add project to git (GitHub)
 https://github.com/scm-ninja fork
@@ -87,3 +88,22 @@ compre commits --> git diff <commitida> <commitid2> --> git log --oneline to see
 --- branches
 git branch -a
 git branch <new>
+
+--- rebase
+having a two branchces master and feature_branch
+---> git merge : to incorporate the changes.
+		git checkout feature_branch
+		git merge master
+		
+    create new commit and log tie both.	
+	history too complex.	
+	
+---> git rebase
+		git checkout feature_branch            |-- yyy --- yyyy --- yyyy (feature)
+		git rebase master                xxxx --- xxxxx (Master)------|
+		
+		on top de master branch put feature.   xxx --- xxx --xxx (Master) --- yyyy --- yyy- yyyy (feature)
+		
+		
+
+
